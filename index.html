@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="덤폰">
+<meta name="theme-color" content="#000000">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAJZklEQVR4Xu3cW0hU2x8H8KXjHE0dK2+TSqampWLqBKlMqVFZZNrtoZTCoLAkHywKfAiipyJCEEIqQSi7UdGEUqlTYpBkppm3DEwyHa0Hx0s6M5oz4/7j34N5bK81e9SOM2e+n1f3uuzf+rn32nut2YQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAH3P16lWOQiqV/rFmwRrU1tby5kZvb681dB/+mL/++mtsbIw3OZ4+ffrHmrU+9tbX5XmLiopydHTkrebDhw/zrv6/wxaTIyYmhjaASI6ZkBz/gOSwdZ8+feKdcAwNDdl6aGycm5vbxMQEb3JUVVXZeHBmsbnbyoYNG+zs7DAbFcIWkwOzUYFsLjnwqCIc/wXWisTHxyclJSUmJvr7+3t6ejo6Oo6MjKhUqubm5vLy8tLSUo1GM/N0enp6/Pz8fj/BsbExiURiMBjmc+7BwcH79+9PSEgIDw/39PRcsmTJ4OBgX19ffX29UqlUKBSjo6PzqR+ESk9Pb2pqoi2RTFGr1Tk5OdOTDB8fH9rx7969ozX88OFD3lI6nW66SGBg4OPHj2lT3Sm9vb2ZmZlCTw/mxsvLq7S0lJ0WMz169EgkEhFCUlJSaKVu3LhB68z79+95S3V0dEwVSU9P12g0AvtTVFTk4OAwtxMHE4KCgrq6ugSOxLT8/HxCyLlz52gFs7KyaA0PDQ3xlqqsrCSE5OTksC8Yv7t27ZqpswTzBQQEzCEzOI4zGo0ymezevXu05IiNjeXtjoeHB+Nik5GRYW5mTNmzZ4/5Zw90YrG4rq7O3GvGtJs3b9JuEAaDwdnZmbfluLg4WouFhYWjo6O0v7I1NzdjqBfSlStXGBE3GAxFRUVJSUne3t5isVgqle7evbusrGy6iFar1el0vDV8/PiR1tETJ07QGjUajdN/qqioyMzMjI2NXbVqVVhY2JEjR0xOlrdu3bqQ0bFlYWFhBoOBNk4qlSo6Opo3Prm5ubRS0+7cuUOLbUFBAbt4e3t7fHz878XFYnF5eTmj7OXLl215QBdSSUkJLdD9/f2BgYGMxp49e8Ye4DNnztCKV1dXM8q2tLR4e3vTyvr5+THuO9XV1QsZIJslk8kYI2Rycrdt2zZ2cmzZsoU3tnZ2dsPDw7SyIyMj7KQkhDx58oRW/Nu3bzY7oAvp+vXrtBC/fPnSZEsikYg9c3R3d+etZM2aNYysOnnypMmmT58+TathbGzMZHEwwcXF5cePH7QQ0/7pZ2lsbKTV8PXrV1oP0tLSGLMcsVhsqu8kNTWVkV4W/jbMChbedu3a5ebmxjsMHR0dAjdh9Pf30waSsftLJpPRSuXn5+v1epPJMTw8TDvGaDTOcynnT7OC5EhJSaFFQaFQcBwnJEaMFS9Gcqxfv563co7j7t+/L6Rdo9FIO8zyF+EsPTns7e137txJi+/z58+FjBAhkxvAFvDK8ebNG4HTSdq7NULIrOViC2TpyREREeHp6ckbuPHx8bdv3wqM6fLly81NDn9/fw8PD95SQmbBU2idJ4QITK9FZOnJwdib09jY+PPnT4Gxo/3IUa1W9/T08FZCu6cQMnnlENiuj48P7UiVSiWwksVi6cmxYQN1V19jY6PAqHn9H+/Bc5iNchwn/IoVHBxM62R3d7fA/i8WS0+O8PBwWmja2toERi0iIsLcewoh1CuHSqViPIPMEhoaSmuasaBjISw9OQICAmiR6uzsFBjEdevWzSE5aM+xnz9/FtguISQyMpJ2cENDg/B6FoVFJ4eDg4Ovry8tLsIndJs2bTI3Oby8vHi3mhJixu0gODiY9u7VYDC0tLQsypALZ9HJ4e7ubm9P7eHg4KCQ87S3t9+8eTPvkVqtlnYZYMxG+/r6hLRLCJHL5bQj6+rqLP/1uUUnh4uLC2MYBL5EksvltNloU1PTxMQEbxOM5BD+iJSUlETrv1KpFJhhi8iik4PxBomQyc9sCAlcRkaGufcUQlgvzl1dXYW0KxKJtm/fTjuyoqJCSCWLy6KTg730sGzZMpOxc3d3T09Pn0NyMK4cK1euNNkuIWTHjh20rR69vb21tbVCKllcFp0c7FlFSEiIydjl5uYy/tFpLznc3NyCgoJolcfFxZlslxCSnZ1NO+z27du02xkIJRaLGVsDCwoK2BVFR0ePj4/TVszHx8dp3/dJTEyc2+agaXK5nFHD2rVrhYYAGBoaGmhRVqvVjOU0X1/fL1++MEaI8YKVsUNnSn19PWMrhkQiaW9vpzVdUlKCEV8YjG9CchxXXFzM+z2FmJiYzs5O9n//3bt3aV0sLi42uSf5wYMHvBceqVRK+1Qhx3ETExO0jdBgto0bN7LHqbKycmrqJ5FIVq9efeDAAYVCIeSHRufPn6f1prW1lbfRWRvSOjo6srOzQ0NDly5dKpVK5XL5pUuXGHtOOW7ytzNmhwAYaL9EMkmn0ymVStphBw8e5G3UycmJNtEpKyurrKw02S5NZ2cn4z5ogSz6aWXKqVOn5jC35zju6NGjAwMDtKBP/wx6lqioqKlfXf+utbX1woULcxtFrVablpYmfMUOhLp48aJZ/69Go/HYsWOEkJqaGlrBFStW8DaflZVFK3L48GFCJnePmtUZjuM0Gk1CQoLQswWz2NnZ5eXlCRySwcHB5OTkqfpp01K9Xk9btSksLKQ1NLX+LhKJhMxYpzU1NTHWZmFhHDp0qKenh5Eier3+1q1bMy8J/f39vMfTdn8RMrkkRpuNznwyOn78eF9fHztfu7q6zp49K/A1vwWyss8+OTs779u3LzU1NTo6WiqVSiQSrVb7/fv3tra2qqoqhUIxzy/bOzg4aDQa3mfUqqqqWb+RcXFx2bt3b3Jyskwm8/X1dXV11el0AwMD3d3dNTU1r169UiqVjN3nYGUiIyNpF4O8vDwrO5l5s4KnlX8TY73NBr98jeT4ByQHUL1+/Zr3tqLT6WgvP8AmMD64IPy3CP8luK38EhISIpFIeEfXBicchCA5ZsCEYxZcOX5hfHDBNq8c8MuLFy94Z6N6vd7JyQmRsmlqtZo3OWz2m6G4rfyN8cEFm72nIDn+hgkHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Ev+B/VC0a7Jjbq0AAAAAElFTkSuQmCC">
+<title>덤폰</title>
+<style>
+  :root { --fg:#f2f2f2; --dim:#7a7a7a; --line:#262626; --bg:#000; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--fg);
+    font-family:-apple-system,"SF Pro Text","Apple SD Gothic Neo",system-ui,sans-serif; }
+  body { padding:calc(env(safe-area-inset-top) + 28px) 28px calc(env(safe-area-inset-bottom) + 24px);
+    display:flex; flex-direction:column; min-height:100%; -webkit-user-select:none; user-select:none; }
+  #clock { font-size:72px; font-weight:200; letter-spacing:-2px; line-height:1; }
+  #date { color:var(--dim); font-size:17px; margin-top:8px; }
+  #apps { list-style:none; padding:0; margin:48px 0 0; flex:1; }
+  #apps li { display:flex; align-items:center; justify-content:space-between; }
+  #apps a { color:var(--fg); text-decoration:none; font-size:32px; font-weight:300; padding:10px 0; flex:1; }
+  #apps a:active { color:var(--dim); }
+  .count { color:var(--dim); font-size:13px; }
+  footer { display:flex; justify-content:space-between; color:var(--dim); font-size:14px; }
+  footer button { background:none; border:0; color:var(--dim); font:inherit; padding:8px 0; }
+  /* pause overlay */
+  #pause { position:fixed; inset:0; background:#000; display:none; flex-direction:column;
+    align-items:center; justify-content:center; text-align:center; padding:32px; }
+  #pause.on { display:flex; }
+  #pause h2 { font-weight:300; font-size:26px; margin:0 0 10px; }
+  #pause p { color:var(--dim); margin:0 0 36px; font-size:16px; line-height:1.5; }
+  #ring { font-size:64px; font-weight:200; margin-bottom:36px; }
+  .row { display:flex; gap:12px; }
+  .btn { border:1px solid var(--line); background:none; color:var(--fg); font:inherit; font-size:17px;
+    padding:14px 22px; border-radius:12px; min-width:120px; }
+  .btn[disabled] { color:#3a3a3a; }
+  /* editor */
+  #editor { position:fixed; inset:0; background:#0b0b0b; display:none; overflow:auto;
+    padding:calc(env(safe-area-inset-top) + 20px) 20px calc(env(safe-area-inset-bottom) + 24px); }
+  #editor.on { display:block; }
+  #editor h2 { font-weight:500; font-size:20px; margin:0 0 16px; }
+  .item { border-bottom:1px solid var(--line); padding:12px 0; display:grid;
+    grid-template-columns:1fr auto; gap:6px 10px; align-items:center; }
+  .item input[type=text] { width:100%; background:#151515; color:var(--fg); border:1px solid var(--line);
+    border-radius:8px; padding:10px; font-size:16px; }
+  .item .url { grid-column:1 / -1; }
+  .item .tools { display:flex; gap:6px; }
+  .item .tools button, .small { background:#151515; border:1px solid var(--line); color:var(--fg);
+    border-radius:8px; padding:8px 10px; font-size:14px; }
+  .item label { grid-column:1 / -1; color:var(--dim); font-size:14px; display:flex; gap:8px; align-items:center; }
+  select { width:100%; background:#151515; color:var(--fg); border:1px solid var(--line); border-radius:8px;
+    padding:10px; font-size:16px; margin:16px 0 8px; }
+  .hint { color:var(--dim); font-size:13px; line-height:1.5; margin:14px 0; }
+  .bar { display:flex; gap:10px; margin-top:18px; }
+</style>
+</head>
+<body>
+  <div id="clock">--:--</div>
+  <div id="date"></div>
+
+  <ul id="apps"></ul>
+
+  <footer>
+    <span id="total"></span>
+    <button id="editBtn" type="button">편집</button>
+  </footer>
+
+  <section id="pause" aria-live="polite">
+    <div id="ring">5</div>
+    <h2 id="pTitle">잠깐 숨 한 번</h2>
+    <p id="pMsg"></p>
+    <div class="row">
+      <button class="btn" id="pCancel" type="button">그만둘래</button>
+      <button class="btn" id="pGo" type="button" disabled>열기</button>
+    </div>
+  </section>
+
+  <section id="editor">
+    <h2>앱 목록 편집</h2>
+    <div id="list"></div>
+    <select id="preset"><option value="">+ 자주 쓰는 앱 추가…</option></select>
+    <button class="small" id="addCustom" type="button">+ 직접 입력해서 추가</button>
+    <p class="hint">
+      주소(URL 스킴)가 없는 앱은 <b>단축어</b>로 열 수 있어요. 단축어 앱에서 'OO 열기' 단축어를 만든 뒤
+      주소에 <code>shortcuts://run-shortcut?name=단축어이름</code> 을 넣으세요.<br>
+      '열기 전 멈춤'을 켜면 그 앱은 5초 기다려야 열려요.
+    </p>
+    <div class="bar">
+      <button class="btn" id="reset" type="button">기본값</button>
+      <button class="btn" id="done" type="button">완료</button>
+    </div>
+  </section>
+
+<script>
+(function () {
+  "use strict";
+  var KEY = "dumbphone.apps.v1", CKEY = "dumbphone.counts.v1", MAX = 8, WAIT = 5;
+
+  var PRESETS = [
+    ["전화", "tel:"], ["메시지", "sms:"], ["카카오톡", "kakaotalk://"], ["카메라 (단축어)", "shortcuts://run-shortcut?name=카메라"],
+    ["지도", "maps://"], ["네이버 지도", "nmap://"], ["카카오맵", "kakaomap://"], ["카카오T", "kakaot://"],
+    ["음악", "music://"], ["캘린더", "calshow://"], ["메모", "mobilenotes://"], ["사진", "photos-redirect://"],
+    ["메일", "message://"], ["단축어", "shortcuts://"], ["토스", "supertoss://"], ["시계·알람", "clock-alarm://"],
+    ["인스타그램", "instagram://"], ["유튜브", "youtube://"]
+  ];
+  var DEFAULTS = [
+    { name: "전화", url: "tel:", pause: false },
+    { name: "메시지", url: "sms:", pause: false },
+    { name: "카카오톡", url: "kakaotalk://", pause: true },
+    { name: "지도", url: "maps://", pause: false },
+    { name: "음악", url: "music://", pause: false },
+    { name: "메모", url: "mobilenotes://", pause: false }
+  ];
+
+  // storage helpers: page must still work if storage is blocked
+  function load(k, fallback) {
+    try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : fallback; } catch (e) { return fallback; }
+  }
+  function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+  var apps = load(KEY, null) || DEFAULTS.slice();
+  var today = new Date().toISOString().slice(0, 10);
+  var counts = load(CKEY, {});
+  if (counts.day !== today) counts = { day: today, by: {} };
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  // clock
+  var DAYS = ["일", "월", "화", "수", "목", "금", "토"];
+  function tick() {
+    var d = new Date();
+    $("clock").textContent = String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+    $("date").textContent = (d.getMonth() + 1) + "월 " + d.getDate() + "일 " + DAYS[d.getDay()] + "요일";
+  }
+  tick(); setInterval(tick, 10000);
+
+  function totalOpens() {
+    var s = 0, by = counts.by; for (var k in by) if (Object.prototype.hasOwnProperty.call(by, k)) s += by[k];
+    return s;
+  }
+
+  function render() {
+    var ul = $("apps"); ul.innerHTML = "";
+    apps.forEach(function (a) {
+      var li = document.createElement("li");
+      var link = document.createElement("a");
+      link.href = a.url; link.textContent = a.name;
+      link.addEventListener("click", function (ev) { ev.preventDefault(); openApp(a); });
+      li.appendChild(link);
+      var n = counts.by[a.name] || 0;
+      if (n) { var c = document.createElement("span"); c.className = "count"; c.textContent = n + "회"; li.appendChild(c); }
+      ul.appendChild(li);
+    });
+    $("total").textContent = "오늘 " + totalOpens() + "번 열었어요";
+  }
+
+  function record(a) {
+    counts.by[a.name] = (counts.by[a.name] || 0) + 1;
+    save(CKEY, counts); render();
+  }
+  function launch(a) { record(a); window.location.href = a.url; }
+
+  // mindful pause
+  var timer = null, pending = null;
+  function openApp(a) {
+    if (!a.pause) { launch(a); return; }
+    pending = a;
+    var n = counts.by[a.name] || 0, left = WAIT;
+    $("pTitle").textContent = a.name + " 열기 전에 잠깐";
+    $("pMsg").textContent = n ? "오늘 이미 " + n + "번 열었어요. 지금 꼭 필요한가요?" : "오늘 처음 여는 거예요. 무엇을 하려고 여나요?";
+    $("ring").textContent = left; $("pGo").disabled = true;
+    $("pause").classList.add("on");
+    clearInterval(timer);
+    timer = setInterval(function () {
+      left -= 1; $("ring").textContent = Math.max(left, 0);
+      if (left <= 0) { clearInterval(timer); $("pGo").disabled = false; $("ring").textContent = "·"; }
+    }, 1000);
+  }
+  function closePause() { clearInterval(timer); pending = null; $("pause").classList.remove("on"); }
+  $("pCancel").addEventListener("click", closePause);
+  $("pGo").addEventListener("click", function () { var a = pending; closePause(); if (a) launch(a); });
+
+  // editor
+  PRESETS.forEach(function (p) {
+    var o = document.createElement("option"); o.value = p[1]; o.textContent = p[0]; $("preset").appendChild(o);
+  });
+
+  function renderEditor() {
+    var box = $("list"); box.innerHTML = "";
+    apps.forEach(function (a, i) {
+      var row = document.createElement("div"); row.className = "item";
+      var name = document.createElement("input"); name.type = "text"; name.value = a.name; name.placeholder = "이름";
+      name.addEventListener("input", function () { a.name = name.value; });
+      var tools = document.createElement("div"); tools.className = "tools";
+      [["↑", -1], ["↓", 1]].forEach(function (t) {
+        var b = document.createElement("button"); b.type = "button"; b.textContent = t[0];
+        b.addEventListener("click", function () {
+          var j = i + t[1]; if (j < 0 || j >= apps.length) return;
+          var tmp = apps[i]; apps[i] = apps[j]; apps[j] = tmp; renderEditor();
+        });
+        tools.appendChild(b);
+      });
+      var del = document.createElement("button"); del.type = "button"; del.textContent = "삭제";
+      del.addEventListener("click", function () { apps.splice(i, 1); renderEditor(); });
+      tools.appendChild(del);
+      var url = document.createElement("input"); url.type = "text"; url.className = "url"; url.value = a.url;
+      url.placeholder = "앱 주소 (예: kakaotalk://)"; url.autocapitalize = "off"; url.spellcheck = false;
+      url.addEventListener("input", function () { a.url = url.value.trim(); });
+      var lab = document.createElement("label");
+      var cb = document.createElement("input"); cb.type = "checkbox"; cb.checked = !!a.pause;
+      cb.addEventListener("change", function () { a.pause = cb.checked; });
+      lab.appendChild(cb); lab.appendChild(document.createTextNode("열기 전 멈춤 (5초)"));
+      row.appendChild(name); row.appendChild(tools); row.appendChild(url); row.appendChild(lab);
+      box.appendChild(row);
+    });
+    var full = apps.length >= MAX;
+    $("preset").disabled = full; $("addCustom").disabled = full;
+    $("preset").options[0].textContent = full ? "최대 " + MAX + "개까지만 둘 수 있어요" : "+ 자주 쓰는 앱 추가…";
+  }
+
+  $("preset").addEventListener("change", function () {
+    var s = $("preset"); if (!s.value || apps.length >= MAX) return;
+    var label = s.options[s.selectedIndex].textContent.replace(/ \(단축어\)$/, "");
+    apps.push({ name: label, url: s.value, pause: /instagram|youtube|kakaotalk/.test(s.value) });
+    s.value = ""; renderEditor();
+  });
+  $("addCustom").addEventListener("click", function () {
+    if (apps.length < MAX) { apps.push({ name: "", url: "", pause: false }); renderEditor(); }
+  });
+  $("reset").addEventListener("click", function () { apps = DEFAULTS.map(function (a) { return Object.assign({}, a); }); renderEditor(); });
+  $("editBtn").addEventListener("click", function () { renderEditor(); $("editor").classList.add("on"); });
+  $("done").addEventListener("click", function () {
+    apps = apps.filter(function (a) { return a.name.trim() && a.url; });
+    save(KEY, apps); $("editor").classList.remove("on"); render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
